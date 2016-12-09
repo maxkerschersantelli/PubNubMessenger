@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{C9240BCB-8066-A428-C17A-939152183906}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_1;UNITY_5_4;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\PubNub.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\BuildRequests.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\CoroutineClass.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\ExceptionHandlers.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\Helpers.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\IPubnubUnitTest.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\JSONSerializer.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\LoggingMethod.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\MD5.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\Pubnub.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\PubnubCallbacks.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\PubnubCrypto.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\PubnubUnity.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\ReconnectState.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\SafeDictionary.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\SubscribeEnvelope.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\Subscription.cs" />
+     <Compile Include="Assets\Scripts\Pubnub\Utility.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\CommonIntegrationTests.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestAbortSubscribe.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestAlreadySubscribed.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestBounceHB.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestBounceNonSub.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestBouncePHB.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestBounceSubscribe.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCGAddListRemoveSubscribeStateHereNowUnsub.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCGCHAddListRemoveSubscribeStateHereNowUnsub.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestConnectedMessage.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegerationNonSubError.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegerationPHBError.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegrationHB.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegrationHBError.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegrationPHB.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegrationSub.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegrationSubError.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegrationSubErrorTimeout.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunIntegrationTests.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunSubscribeAbort.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestCoroutineRunSubscribeMultiple.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestDelUserStateCG.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestDetailedHistory.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestDetailedHistoryParams.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestGlobalHereNow.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestHBTimeout.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestHereNow.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestNonSubTimeout.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestNotSubscribed.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestNullAsEmptyOnPublish.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPHBTimeout.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPresenceCG.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPresenceHeartbeat.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestProcessTimeout.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPublishComplex.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPublishKeyOverride.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPublishKeyPresent.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPublishNoStore.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPublishSimple.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPublishWithMeta.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestPublishWithMetaNeg.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestRemoveCGAndRemoveAllCG.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSecretKeyOptional.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSetAndDeleteGlobalState.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSetAndGetGlobalState.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeComplexMessage.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeDict.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeDoubeArray.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeDouble.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeEmptyArray.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeEmptyDict.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeInt.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeIntArray.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeJoin.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeLong.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeLongArray.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribePubSubV2PresenceResponse.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribePubSubV2Response.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeSimpleMessage.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeStringArray.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeTimeout.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeWildcard.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestSubscribeWithTimetoken.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestTimeResponse.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestUnsubscribe.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestUnsubscribeWildcard.cs" />
+     <Compile Include="Assets\Scripts\PubnubIntegrationTests\TestWhereNow.cs" />
+     <Compile Include="Assets\ThirdParty\MiniJSON.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Assertions.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\CheckMethod.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\ActionBase.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\BoolComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\ColliderComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\ComparerBase.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\FloatComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\GeneralComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\IntComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\IsRenderedByCamera.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\StringComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\TransformComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\ValueDoesNotChange.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\Vector2Comparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\Vector3Comparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\Vector4Comparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\VectorComparerBase.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\InvalidPathException.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\MemberResolver.cs" />
+     <Compile Include="Assets\UnityTestTools\Common\ITestResult.cs" />
+     <Compile Include="Assets\UnityTestTools\Common\TestResultState.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\DTOFormatter.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\ITestRunnerCallback.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\IntegrationTest.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\IntegrationTestAttribute.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\IntegrationTestsProvider.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\NetworkResultSender.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\ResultDTO.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestComponent.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestResult.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestResultRenderer.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestRunner.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestRunnerCallbackList.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestRunnerConfigurator.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestingAssets\CallTesting.cs" />
+     <None Include="Assets\UnityTestTools\LICENSE.txt" />
+     <None Include="Assets\UnityTestTools\changelog.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle">
+ <HintPath>/Users/Max/Desktop/unity saves/PubNub/Assets/ThirdParty/BouncyCastle.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>/Users/Max/Desktop/unity saves/PubNub/Assets/ThirdParty/JsonFx.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="MarkerMetro.Unity.WinLegacy">
+ <HintPath>/Users/Max/Desktop/unity saves/PubNub/Assets/ThirdParty/MarkerMetro.Unity.WinLegacy.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>/Users/Max/Desktop/unity saves/PubNub/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil.Mdb">
+ <HintPath>/Users/Max/Desktop/unity saves/PubNub/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.Mdb.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
